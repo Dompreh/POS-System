@@ -1,0 +1,17 @@
+ .image{
+    width: 25rem;
+    object-fit: cover;
+    height: 13rem;
+    object-position:center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.image:hover{
+    transform: scale(0.96);
+}
+.white{
+    color: white;
+}
+.name{
+    word-break: break-word;
+}
