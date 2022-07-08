@@ -105,7 +105,7 @@ function POS() {
                                 <div className=" pos px-1 text-center border mt-3" onClick={()=>addToCart(product)}>
                                     <p className="name">{product.name}</p>
                                     <img src={product.image} alt={product.name} className="image  rounded img-fluid img-center" />
-                                    <p>{product.price}</p>
+                                    <p>${product.price}</p>
                                 </div>
                             </div>
                         )}
@@ -133,9 +133,9 @@ function POS() {
                                 
                                     <td>{cartProduct.id}</td>
                                     <td>{cartProduct.name}</td>
-                                    <td>{cartProduct.price}</td>
+                                    <td>${cartProduct.price}</td>
                                     <td>{cartProduct.quantity}</td>
-                                    <td>{cartProduct.totalAmount}</td>
+                                    <td>${cartProduct.totalAmount}</td>
                                     <td>
                                     <button className="btn bg-danger white btn-xs btn-xs" onClick={()=> removeProduct(cartProduct)}>Remove</button>
                                     </td>
